@@ -1,0 +1,35 @@
+body {
+    background-image: url("Fondo.jpg");
+    background-size: cover;
+    background-color: #cccccc ;
+    margin:0;
+}
+h1 {
+    text-align: center;
+    background-color: pink;
+}
+h3 {
+    text-align: center;
+    background-color: pink;
+}
+table, th, td {
+    border: 2px solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar {
+background-color: blue;
+display: flex; 
+height: 40px;
+justify-content: space-evenly;
+align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+.link:hover{
+    background-color: black;
+}
