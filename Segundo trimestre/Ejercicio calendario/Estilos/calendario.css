@@ -1,3 +1,65 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(221, 221, 221);
+}
 img{
     width: 250px;
+}
+table:first-child{
+    text-align: center;
+    color: deepskyblue;
+}
+table{
+    border: 1px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+
+
+h1{
+    color: deepskyblue;
+}
+thead{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+tr{
+    background-color: white;
+}
+
+th{
+    padding: 8px;
+    border: 2px solid gray;
+    background-color: rgb(40, 40, 40);
+}
+td{
+    padding: 8px;
+    border: 2px solid gray;
+}
+.semana-verde{
+    background-color: green;
+}
+.Lenguaje{
+    background-color: aquamarine;
+    color: white;
+}
+.Programacion{
+    background-color: burlywood;
+    color: white;
+}
+.Sisteas{
+    background-color: pink;
+    color: white;
+}
+.BBDD{
+    background-color: rgb(133, 59, 59);
+    color: white;
+}
+.Entornos{
+    background-color: aquamarine;
+    color: white;
 }
