@@ -1,3 +1,21 @@
-h1{
+h2{
     text-align: center;
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 2px;
+}
+tr:nth-child(odd){
+    background-color: rgba(241, 216, 216, 0.7);
+}
+tr:nth-child(even){
+    background-color: rgba(246,204,204,0.7);
+}
+body, img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
 }
