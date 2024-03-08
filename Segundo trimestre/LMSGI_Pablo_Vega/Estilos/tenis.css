@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+    color: rgb(68, 68, 192);
+    font-family: 'Courier New', Courier, monospace;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 2px;
+}
+th{
+    background-color: rgb(168, 168, 168);
+    border: 1px solid black;
+}
+td{
+    border: 1px solid gray;
+}
+.fila:hover{
+background-color: rgb(135, 28,28,0.3);
+}
+.cara{
+    width: 30%;
+    height: 50%;
+}
+.bandera{
+    width: 80%;
+    height: 100%;
+}
