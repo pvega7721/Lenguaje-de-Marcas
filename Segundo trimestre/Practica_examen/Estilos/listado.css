@@ -1,0 +1,38 @@
+body, img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    padding-left: 2px;
+}
+caption{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+th{
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    text-align: left;
+}
+td{
+    padding: 8px;
+    border: 1px solid white;
+    text-align: left;
+    background-color: aqua;
+}
+.nombre{
+    text-decoration: underline;
+}
+.sobresaliente{
+    font-weight: bold;
+}
+.matematicas{
+    background-color: yellow;
+
+}
