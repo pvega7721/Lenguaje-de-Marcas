@@ -15,5 +15,37 @@
     <h2>CABECERA NORMAL</h2>
     <!-- CABECERA CON IDENTIFICADOR DE ESTILOS -->
     <h2 id="miCabecera">CABECERA CON UN IDENTIFICADOR PARA ESTILOS</h2>
+    <!-- CABECERA CON UN IDENTIFICADOR REPETIDO -->
+    <h2 ID="miCabecera">CABECERA CON UN IDENTIFICADOR REPETIDO</h2>
+    <!-- BOOKMARKS: ENLACES INTERNOS DENTRO DE NUESTRA PÁGINA HTML -->
+    <div class = "enlaces">
+        <h1>Pulse en la sección a la que desea acceder</h1>
+        <a href="#C1">Sección1</a><br>
+        <a href="#C2">Sección2</a><br>
+        <a href="#C3">Sección3</a><br>
+    </div>
+    <br><br>
+    <div id="C1" class="capa1">
+        <h1>Sección primera</h1>
+        <p>Esta sección es la primera de nuestra página</p>
+    </div>
+    <div id="C2" class="capa2">
+        <h1>Sección segunda</h1>
+        <p>Esta sección es la segunda de nuestra página</p>
+    </div>
+    <div id="C3" class="capa3">
+        <h1>Sección tercera</h1>
+        <p>Esta sección es la tercera de nuestra página</p>
+    </div>
+    <div class="enlaces">
+        <h1>Volver al inicio</h1>
+        <a href="Tema13_1.html">Página Tema 13_1</a>
+    </div>
+    <script>
+        function cambiaTexto(){
+            document.getElementById("miCabecera").innerHTML = "Texto de cabecera modificado";
+        }
+        cambiarTexto();
+    </script>
 </body>
 </html>

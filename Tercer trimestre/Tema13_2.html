@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- ETIQUETA PARA HACER LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tema 13_2 html</title>
+        <!-- ICONO DE VENTANA -->
+        <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
+        <!-- HOJA DE ESTILOS EXTERNA -->
+        <link rel="stylesheet" href="Estilos/estilos.css">
+    </head>
+<body>
+    <!-- BOOKMARKS: ENLACES A OTRA PÁGINA Y ENLACES INTERNOS DESDE UNA PÁGINA HTML -->
+    <div class="enlaces">
+        <h1>Estamos en la página Tema13_2</h1>
+        <p>Vamos a mostrar la página tema13.html dentro de nuestro iframe</p>
+    </div>
+    <!-- USO DE IFRAME PARA CARGAR UNA PÁGINA RELATIVA -->
+    <iframe src="Tema13.html" style="height: 300px;width: 100%; border: 2px solid red;" title="tema13.html"></iframe>
+    <hr>
+    <!-- USO DE IFRAME PARA CARGAR UNA PÁGINA RELATIVA -->
+    <a href="https://www.diariodesevilla.es/" target="iframe_buscador"> Abrir diario de Sevilla en el fram de abajo</a>
+    <iframe name="iframe_buscador" style="height: 300px;width: 100%; border: 2px solid green;" title="abrir buscador"></iframe>
+</body>
+</html>
