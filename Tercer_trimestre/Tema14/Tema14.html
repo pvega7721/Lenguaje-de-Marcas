@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- ESTABLECE EL JUEGO DE CARACTERES -->
-        <meta charset="UTF-8">
-        <!-- ETIQUETA PARA HACER LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
-        <meta name="Descripción" content="Curso HTML tema 14">
-        <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR MOTORES DE BÚSQUEDA (SEO) -->
-        <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Responsive">
-        <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
-        <meta name="author" content="Pablo Vega">
-        <title>Tema 14 html</title>
-        <!-- ICONO DE VENTANA -->
-        <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
-        <!-- HOJA DE ESTILOS EXTERNA -->
-        <link rel="stylesheet" href="">
-        <!-- PONEMOS URL BASE -->
-        <!-- <base href="https://www.diariodesevilla.es/" target="_blank"> -->
-        <base href="practicastema14/" target="_blank">
-    </head>
+
+<head>
+    <!-- ESTABLECE EL JUEGO DE CARACTERES -->
+    <meta charset="UTF-8">
+    <!-- ETIQUETA PARA HACER LA PÁGINA, ADAPTACIÓN DE ESCALAS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTABLECE UNA DESCRIPCIÓN DE LA PÁGINA -->
+    <meta name="Descripción" content="Curso HTML tema 14">
+    <!-- ESTABLECE PALABRAS CLAVE PARA SER LOCALIZADA LA PÁGINA POR MOTORES DE BÚSQUEDA (SEO) -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Meta, Responsive">
+    <!-- ESTABLECE EL AUTOR DEL ARCHIVO -->
+    <meta name="author" content="Pablo Vega">
+    <title>Tema 14 html</title>
+    <!-- ICONO DE VENTANA -->
+    <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
+    <!-- HOJA DE ESTILOS EXTERNA -->
+    <link rel="stylesheet" href="">
+    <!-- PONEMOS URL BASE -->
+    <!-- <base href="https://www.diariodesevilla.es/" target="_blank"> -->
+    <base href="practicastema14/" target="_blank">
+    <style>
+        /* USO DE MEDIA QUERE */
+        * {
+            box-sizing: border-box;
+        }
+
+        .left{
+            background-color: #2196f3;
+            padding:20px;
+            float: left;
+            width: 20%; /* Ancho a 20% por defecto*/
+        }
+        .main{
+            background-color: #f1f1f1;
+            padding:20px;
+            float: left;
+            width: 60%; /* Ancho a 60% por defecto*/
+        }
+        .right{
+            background-color: #04AA6D;
+            padding:20px;
+            float: left;
+            width: 20%; /* Ancho a 20% por defecto*/
+        }
+        /* Uso de media query para añadir un cambio cuando se llega a 800px o menos: */
+        @media screen and (max-width:800px){
+            .left, .main, .right {
+                width: 100%; /*Pone en vertical las cajas cuando baja o llega a los 800 px la resolución de la pantalla*/
+            }
+        }
+
+    </style>
+</head>
+
 <body>
     <!-- <h2>Rutas absolutas</h2> -->
     <!-- LINK EXTERNOS ABSOLUTOS -->
@@ -47,5 +81,30 @@
     <hr>
     <a href="Tema14_2.html">Abrir Tema 14_2</a>
     <hr>
+    <!-- USO RESPONSIVE DE IMÁGENES -->
+    <!-- <img src="tema14_paisaje.jpg" style="width: 100%;"> -->
+    <!-- PROPIEDAD MAX-WIDTH PARA DELIMITAR EL ESCALADO HORIZONTAL DE UNA IMAGEN -->
+    <img src="tema14_paisaje.jpg" style="max-width: 100%;">
+    <!-- TEXTO EN PIXELES -->
+    <h1 style="font-size: 16px;">Texto normal en pixeles</h1>
+    <p style="font-size: 12px;"> Este párrafo está en tamaño 12 pixeles</p>
+    <!-- TEXTO EN VIEWPORT WITH -->
+    <h1 style="font-size: 10vw;">Texto responsive en viewport width</h1>
+    <p style="font-size: 5vw;"> Este párrafo está en responsive a 12 viewport width.</p>
+    <!-- USO DE MEDIA QUERIE -->
+    <h2>Media Queries</h2>
+    <p>Escala el ancho del navegador</p>
+    <p>Mira lo que pasa cuando se alcanza 800px</p>
+    <hr>
+    <div class="left">
+        <p>PARTE IZQUIERDA</p>
+    </div>
+    <div class="main">
+        <p>PARTE CENTRAL</p>
+    </div>
+    <div class="right">
+        <p>PARTE DERECHA</p>
+    </div>
 </body>
+
 </html>
