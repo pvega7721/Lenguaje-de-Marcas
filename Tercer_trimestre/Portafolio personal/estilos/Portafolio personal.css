@@ -1,0 +1,19 @@
+body{
+    background-image: url('Imagenes/fondo_espacio.jpg');
+}
+.formacion {
+    float: left;
+    width: 50%;
+}
+.habilidades {
+    float: right;
+    width: 50%;
+}
+.experiencia {
+    float: left;
+    width: 50%;
+}
+.contacto {
+    float: right;
+    width: 50%;
+}
