@@ -1,19 +1,33 @@
 body{
-    background-image: url('Imagenes/fondo_espacio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .formacion {
+    border-radius: 5%;
+    margin-right: 10%;
+    background-color: aqua;
     float: left;
-    width: 50%;
+    width: 40%;
 }
 .habilidades {
+    border-radius: 5%;
+    margin-right: 10%;
+    background-color: aqua;
     float: right;
-    width: 50%;
+    width: 40%;
 }
 .experiencia {
+    border-radius: 5%;
+    margin-right: 10%;
+    background-color: aqua;
     float: left;
-    width: 50%;
+    width: 40%;
 }
 .contacto {
+    border-radius: 5%;
+    margin-right: 10%;
+    background-color: aqua;
     float: right;
-    width: 50%;
+    width: 40%;
 }
