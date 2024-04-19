@@ -3,9 +3,37 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-.formacion {
+.fotoperfil{
+    margin-left: 25%;
+}
+.indice{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.link_indice{
+    text-decoration: none;
+    color: white;
+}
+.link_indice:hover{
+    font-size: 20px;
+}
+.indice li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    width: 15%;
+}
+.sobre_mi{
     border-radius: 5%;
     margin-right: 10%;
+    background-color: aqua;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+.formacion {
+    border-radius: 5%;
+    margin-right: 20%;
     background-color: aqua;
     float: left;
     width: 40%;
@@ -15,19 +43,21 @@ body{
     margin-right: 10%;
     background-color: aqua;
     float: right;
+    padding: 1%;
     width: 40%;
 }
 .experiencia {
     border-radius: 5%;
     margin-right: 10%;
     background-color: aqua;
-    float: left;
+    float: right;
     width: 40%;
 }
 .contacto {
     border-radius: 5%;
     margin-right: 10%;
     background-color: aqua;
-    float: right;
+    float: left;
     width: 40%;
+    padding: 1%;
 }
