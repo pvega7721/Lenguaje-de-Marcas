@@ -4,7 +4,8 @@ body{
     background-attachment: fixed;
 }
 .fotoperfil{
-    margin-left: 25%;
+    border-radius: 15px;
+    border-color: blueviolet;  
 }
 .indice{
     list-style-type: none;
@@ -18,46 +19,40 @@ body{
 }
 .link_indice:hover{
     font-size: 20px;
+    color:black;
 }
 .indice li {
     display: inline-block; /* Muestra los elementos de la lista en línea */
     width: 15%;
 }
 .sobre_mi{
-    border-radius: 5%;
-    margin-right: 10%;
-    background-color: aqua;
-    align-items: center;
-    width: 40%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px auto; 
+    background-color: #B172FB;
+    padding: 20px;
+    border-radius: 10px;
 }
-.formacion {
-    border-radius: 5%;
-    margin-right: 20%;
-    background-color: aqua;
-    float: left;
-    width: 40%;
+
+.formacion, .habilidades, .experiencia, .contacto {
+    width: 45%; 
+    margin: 20px; 
+    background-color: #B172FB;
+    padding: 20px;
+    border-radius: 10px;
 }
-.habilidades {
-    border-radius: 5%;
-    margin-right: 10%;
-    background-color: aqua;
+.contenedor {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.formacion, .experiencia {
+    flex: 1;
+}
+
+.habilidades, .contacto {
     float: right;
-    padding: 1%;
-    width: 40%;
 }
-.experiencia {
-    border-radius: 5%;
-    margin-right: 10%;
-    background-color: aqua;
-    float: right;
-    width: 40%;
-}
-.contacto {
-    border-radius: 5%;
-    margin-right: 10%;
-    background-color: aqua;
-    float: left;
-    width: 40%;
-    padding: 1%;
+.formacion, .habilidades, .experiencia, .contacto{
+    display: inline-block;
+    vertical-align: top;
 }
