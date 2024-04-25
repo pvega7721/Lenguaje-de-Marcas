@@ -5,7 +5,6 @@ body{
 }
 .fotoperfil{
     border-radius: 15px;
-    border-color: blueviolet;  
 }
 .indice{
     list-style-type: none;
@@ -25,15 +24,16 @@ body{
     display: inline-block; /* Muestra los elementos de la lista en línea */
     width: 15%;
 }
-.sobre_mi{
-    width: 90%;
-    margin: 20px auto; 
+.contacto{
+    width: 95%;
+    margin: 0 auto; 
     background-color: #B172FB;
     padding: 20px;
     border-radius: 10px;
+    margin-left: 20px;
 }
 
-.formacion, .habilidades, .experiencia, .contacto {
+.formacion, .habilidades, .experiencia, .sobre_mi {
     width: 45%; 
     margin: 20px; 
     background-color: #B172FB;
@@ -48,10 +48,10 @@ body{
 .formacion, .experiencia {
     flex: 1;
 }
-
-.habilidades, .contacto {
-    float: right;
+.sobre_mi, .habilidades {
+    flex: 1;
 }
+
 .formacion, .habilidades, .experiencia, .contacto{
     display: inline-block;
     vertical-align: top;
