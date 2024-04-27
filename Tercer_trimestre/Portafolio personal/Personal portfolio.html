@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- SETS THE CHARACTER ENCODING -->
+        <meta charset="UTF-8">
+        <!-- ENABLES RESPONSIVE DESIGN -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pablo Vega Portfolio</title>
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
+        <!-- EXTERNAL STYLESHEET -->
+        <link rel="stylesheet" href="estilos/Personal portfolio.css">
+    </head>
+<body style="background-image: url(Imagenes/_400eff04-2d44-48e8-ac1f-836eb2c1d0e2.jpeg);">
+    <header>
+        <h1 style="color: white; margin-top: 10px; text-align: center;">Pablo Vega Flores</h1>
+        <p style="color: white; text-align: center;">Brief personal introduction and photo</p>
+        <nav>
+            <ul class="indice">
+                <li><a class="link_indice" href="#about_me">About me</a></li>
+                <li><a class="link_indice" href="#education">Education</a></li>
+                <li><a class="link_indice" href="#experience">Experience</a></li>
+                <li><a class="link_indice" href="#skills">Soft skills</a></li>
+                <li><a class="link_indice" href="#contact">Contact</a></li>
+                <li><a class="link_indice" href="#suggestions">Suggestions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <div class="about_me">
+            <section id="about_me">
+                <img class="fotoperfil" src="Imagenes/Perfil.jpeg" alt="My profile picture" height="200px">
+                <h2>About me</h2>
+                <p>Detailed description of myself</p>
+            </section>
+        </div>
+        <div class="skills">
+            <section id="skills">
+                <h2>Soft skills</h2>
+                <p>My soft skills</p>
+            </section>
+        </div>
+    </div>
+    <br><br>
+    <div class="contenedor">
+        <div class="education">
+            <section id="education">
+                <h2>Education</h2>
+                <p>CFGM in Microinformatics and Networks at <a href="https://ies-mardecadiz.com">IES Mar de Cádiz</a></p>
+                <p>CFGS in Web Application Development at <a href="https://www.ceuandalucia.es">CEU Andalucía</a></p>
+            </section>
+        </div>
+        <div class="experience">
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>3 months of internship as an IT technician at <a href="https://bodegasfundador.site">Bodegas Fundador</a></p>
+            </section>
+        </div>
+    </div>
+        <br>
+        <div class="contact">
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>For more information, don't hesitate to contact me.</p>
+                <div class="links">    
+                    <ul>
+                        <li><a href="mailto:pablo.veflo.pvf@icloud.com">Send me an email</a></li>
+                        <li><a href="https://www.linkedin.com/in/pablo-vega-flores" target="_blank">Contact me on LinkedIn</a></li>
+                        <li><a href="Archivos/Curriculum.pdf" download="Curriculum.pdf">Download my CV</a></li>
+                        <li><a href="https://github.com/pvega7721" target="_blank">Visit my GitHub profile</a></li>
+                    </ul>
+                </div>
+                <div class="formulario">
+                    <form id="suggestions" action="https://www.w3shcools.com/action_page.php">
+                        <h2>Suggestions</h2>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required pattern="[A-Za-z]{1,20}">
+                        <br><br>
+                            <label for="last_name">Last name:</label>
+                            <input type="text" id="last_name" name="last_name" required pattern="[A-Za-z ]{1,50}">
+                        <br><br>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" required>
+                        <br><br>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        <br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        <br><br>
+                            <label for="sex">Sex:</label>
+                            <select id="sex" name="sex" >
+                                <option value="">Select...</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        <br><br>
+                        <h3>Hobbies:</h3>
+                            <label for="hobbies">Sports:</label>
+                                <input type="checkbox" id="sports" name="hobbies[]" value="Sports">
+                            <label for="hobbies">Cinema:</label>
+                                <input type="checkbox" id="cinema" name="hobbies[]" value="Cinema">
+                            <label for="hobbies">Theater:</label>
+                                <input type="checkbox" id="theater" name="hobbies[]" value="Theater">
+                            <label for="hobbies">Watching TV:</label>
+                                <input type="checkbox" id="tv">
+                            <label for="hobbies">Listening to music:</label>
+                                <input type="checkbox" id="music">
+                            <label for="hobbies">Studying:</label>
+                                <input type="checkbox" id="studying">
+                    <br><br>
+                    <label for="birthdate">Birthdate:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    <br><br>
+                    <label for="rating">Rate this page:</label>
+                        <input type="range" id="rating" name="rating" min="0" max="10" step="1" >
+                    <br><br>
+                    <label for="province">Province:</label>
+                    <select id="province" name="province">
+                        <option value="Almería">Almería</option>
+                        <option value="Cádiz">Cádiz</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Granada">Granada</option>
+                        <option value="Huelva">Huelva</option>
+                        <option value="Jaén">Jaén</option>
+                        <option value="Málaga">Málaga</option>
+                        <option value="Sevilla">Sevilla</option>
+                    </select>
+                    <br><br>
+                    <textarea rows="10" id="text" name="text"></textarea>
+                    <br><br>
+                    <label for="file">Upload a file:</label>
+                        <input type="file" id="file" name="file">
+                    <br><br>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Clear">
+                    </form>
+                </div>
+            </section>
+        </div>
+</body>
+</html>

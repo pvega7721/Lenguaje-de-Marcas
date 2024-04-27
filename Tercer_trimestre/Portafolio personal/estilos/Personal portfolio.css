@@ -1,0 +1,61 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fotoperfil{
+    border-radius: 15px;
+}
+.indice{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.link_indice{
+    text-decoration: none;
+    color: white;
+}
+.link_indice:hover{
+    font-size: 20px;
+    color:black;
+}
+.indice li {
+    display: inline-block; /* Displays list items inline */
+    width: 15%;
+}
+.contact{
+    width: 95%;
+    margin: 0 auto; 
+    background-color: #B172FB;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.education, .skills, .experience, .about_me {
+    width: 45%; 
+    margin: 20px; 
+    background-color: #B172FB;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contenedor {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.education, .experience {
+    flex: 1;
+}
+.about_me, .skills {
+    flex: 1;
+}
+.education, .skills, .experience, .contact{
+    display: inline-block;
+    vertical-align: top;
+}
+textarea {
+    width: 100%;
+    height: 10em;
+}
