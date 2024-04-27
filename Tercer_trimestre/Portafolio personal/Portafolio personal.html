@@ -22,6 +22,8 @@
                 <li><a class="link_indice" href="#Experiencia">Experiencia</a></li>
                 <li><a class="link_indice" href="#habilidades">Soft skills</a></li>
                 <li><a class="link_indice" href="#contacto">Contacto</a></li>
+                <li><a class="link_indice" href="#Sugerencias">Sugerencias</a></li>
+
             </ul>
         </nav>
     </header>
@@ -61,12 +63,80 @@
             <section id="contacto">
                 <h2>Contacto</h2>
                 <p>Para más información, no dudes en ponerte en contacto conmigo.</p>
-                <ul>
-                    <li><a href="mailto:pablo.veflo.pvf@icloud.com">Envíame un e-mail</a></li>
-                    <li><a href="https://www.linkedin.com/in/pablo-vega-flores" target="_blank">Contactame por LinkedIn</a></li>
-                    <li><a href="Archivos/Curriculum.pdf" download="Curriculum.pdf">Descarga mi CV</a></li>
-                    <li><a href="https://github.com/pvega7721" target="_blank">Visita mi perfil de GitHub</a></li>
-                </ul>
+                <div class="links">    
+                    <ul>
+                        <li><a href="mailto:pablo.veflo.pvf@icloud.com">Envíame un e-mail</a></li>
+                        <li><a href="https://www.linkedin.com/in/pablo-vega-flores" target="_blank">Contactame por LinkedIn</a></li>
+                        <li><a href="Archivos/Curriculum.pdf" download="Curriculum.pdf">Descarga mi CV</a></li>
+                        <li><a href="https://github.com/pvega7721" target="_blank">Visita mi perfil de GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="formulario">
+                    <form id="Sugerencias" action="https://www.w3shcools.com/action_page.php">
+                        <h2>Sugerencias</h2>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="Nombre" name="Nombre" required pattern="[A-Za-z]{1,20}">
+                        <br><br>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-z ]{1,50}">
+                        <br><br>
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        <br><br>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        <br><br>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        <br><br>
+                            <label for="sexo">Sexo:</label>
+                            <select id="sexo" name="sexo" >
+                                <option value="">Selecciona...</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+                        <br><br>
+                        <h3>Aficiones:</h3>
+                            <label for="aficiones">Deporte:</label>
+                                <input type="checkbox" id="deporte" name="aficiones[]" value="Deporte">
+                            <label for="aficiones">Cine:</label>
+                                <input type="checkbox" id="cine" name="aficiones[]" value="Cine">
+                            <label for="aficiones">Teatro:</label>
+                                <input type="checkbox" id="teatro" name="aficiones[]" value="Teatro">
+                            <label for="aficiones">Ver televisión:</label>
+                                <input type="checkbox" id="television">
+                            <label for="aficiones">Escuchar música:</label>
+                                <input type="checkbox" id="musica">
+                            <label for="aficiones">Estudiar:</label>
+                                <input type="checkbox" id="estudiar">
+                    <br><br>
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="Fecha de nacimiento" required>
+                    <br><br>
+                    <label for="Valoracion">Valora esta página:</label>
+                        <input type="range" id="Valoracion" name="Valoracion" min="0" max="10" step="1" >
+                    <br><br>
+                    <label for="provincias">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <option value="Almería">Almería</option>
+                        <option value="Cádiz">Cádiz</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Granada">Granada</option>
+                        <option value="Huelva">Huelva</option>
+                        <option value="Jaén">Jaén</option>
+                        <option value="Málaga">Málaga</option>
+                        <option value="Sevilla">Sevilla</option>
+                    </select>
+                    <br><br>
+                    <textarea rows="10" id="texto" name="texto"></textarea>
+                    <br><br>
+                    <label for="Archivos">Sube un archivo</label>
+                        <input type="file" id="archivo" name="archivo">
+                    <br><br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </form>
+                </div>
             </section>
         </div>
 </body>
