@@ -1,0 +1,25 @@
+aside{
+    float: left;
+    text-align: center;
+    border-radius:10%;
+    margin-left: 20px;
+    height: auto;
+    background-color: rgb(136, 136, 227);
+}
+nav{
+    background-color: rgb(118, 207, 255);
+}
+.superior{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+div{
+    margin: 20px;
+}
+fieldset{
+    margin: 10px;
+    margin-bottom: 10px;
+    border: solid 2px;
+    color: gray;
+}
