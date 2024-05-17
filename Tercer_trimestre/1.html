@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="repaso.css">
+    <title>Practica repaso(13-18)</title>
+    <script>
+        //Actualiza el valor de un campo de tipo range en un campo de texto de solo lectura:
+        function actualizaTexto(texto) {
+            document.getElementById("idMuestraRango").value = texto;
+        }
+    </script>
+</head>
+<body>
+    <aside>
+        <h3>MENU</h3>
+        <nav>
+            <ul>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#formulario">Registro</a></li>
+                <li><a href="#login">Acceso Sede</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section id="noticias">
+        <article>
+            <div class="colorFondo">
+                <div style="background-color: darkcyan; margin: 20px 20px 20px 20px; padding: 20px;">
+                    <h2>NOTICIAS</h2>
+                    <h3>Asiste como testigo a la boda de su mejor amigo y acaba casado con la novia</h3>
+                    <figure>
+                        <img src="casados.jpg" alt="Imagen de casados">
+                        <figcaption>Los supuestos novios casados.</figcaption>
+                    </figure>
+                    <p>El caso, del todo real, ha dado pie a toda una lluvia de anecdotas de personas que han sufrido errores
+                        administrativos similares y peores. Despuse de firmar correctamente cada uno en su lugar, llega la 
+                        administracion y cambia el orden de los nombres. Esto ha pasado en Argentina. El error ya resuelto, 
+                        ha pillado por sorpresa a todo el mundo
+                    </p>   
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="formulario">
+        <article>
+            <div style="background-color: darkcyan; margin: 20px 20px 20px 20px; padding: 20px;">
+            <div style="background-color: rgb(0, 204, 204);">
+                <fieldset>
+                    <legend>Registro</legend>
+                    <form action="https://www.w3schools.com/action_page.php">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" maxlength="20" required>
+                        
+                        <br><br>
+     
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" maxlength="50" required>
+                        
+                        <br><br>
+     
+                        <label for="email">Gmail:</label>
+                        <input type="email" id="email" required>
+                        
+                        <br><br>
+     
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="DATE" id="fecha_nacimiento" required>
+                        
+                        <br><br>
+     
+                        <label for="multimedia">Fotografía:</label>
+                        <input type="file" id="multimedia">
+                        
+                        <br><br>
+     
+                        <label for="valoracion">Nivel de Inglés:</label>
+                        <input type="range" id="valoracion" min="1" max="10" required onchange="actualizaTexto(this.value);">
+                        <input type="text" id="idMuestraRango" value="5" readonly size="1">
+                        
+                        
+                        <br><br>
+               
+                        <label for="idiomas">Idiomas añadidos:</label>
+                        <select id="idiomas" required>
+                            <option value="frances">Francés</option>
+                            <option value="aleman">Alemán</option>
+                            <option value="italiano">Italiano</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        
+                        <br><br>
+               
+     
+                        <label for="provincia">Acceso:</label>
+                        <select id="provincia" required>
+                            <option value="frances">Acceso interno</option>
+                            <option value="aleman">Acceso externo</option>
+                        </select>
+                        
+                        <br><br>
+           
+                        <input type="submit" value="Enviar">
+                    </form>
+                </fieldset>
+            </div>
+            </div>
+        </article>
+    </section>
+    <section id="login">
+            <article id="acceso">
+                <div style="background-color: darkcyan; margin: 20px 20px 20px 20px; padding: 20px;">
+                <div style="background-color: rgb(74, 149, 169);color: white; padding: 10px;float: none;">
+                   <fieldset>
+                    <legend>Acceso sede electrónica</legend>
+                        <form action="https://www.w3schools.com/action_page.php">
+                            <label for="nombre">Usuario:</label>
+                            <input type="text" id="nombre" maxlength="20" required>
+                            
+                            <br><br>
+         
+                            <label for="idPwd">Contraseña:</label><br>
+                            <input type="password" id="idPwd" name="idPwd" required>
+                            
+                            <br><br>
+                           
+                           
+                            <input type="checkbox" id="recordar" name="recordar" value="contraseña">
+                            <label for="recordar"> Recordar Contraseña</label>
+                            
+                            <br><br>
+
+
+                            <input type="checkbox" id="guardar" name="guardar" value="contraseña">
+                            <label for="guardar">Guardar Contraseña</label>
+                            
+                            <br><br>
+           
+                            <input type="submit" value="Iniciar Sesión">
+                        </form>
+                    </fieldset>
+                </div>
+                </div>
+            </article>  
+    </section>
+</body>
+</html>

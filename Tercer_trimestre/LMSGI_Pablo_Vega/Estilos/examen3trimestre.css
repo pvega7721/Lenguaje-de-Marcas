@@ -1,0 +1,52 @@
+.indice li {
+    display: inline-block;
+    /* Muestra los elementos de la lista en línea */
+    width: 15%;
+}
+img{
+    width: 250px;
+    height: 200px;
+}
+.contenedor{
+    display: flex;
+}
+fieldset{
+    margin: 10px;
+    margin-bottom: 10px;
+    border: solid 2px;
+    border-color: rgb(0, 84, 157);
+}
+footer{
+    background-color: rgb(67, 67, 161);
+    color: white;
+    padding: 10px;
+    clear: both;
+    text-align: center;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+}
+h2{
+    color: #25354e;
+}
+figcaption{
+    padding-left: 30px;
+    color: aquamarine;
+    font-weight: bold;
+}
+header{
+    padding: 20px;
+    background-color: rgb(124, 167, 202);
+    color: black;
+    margin: 20px;
+}
+article{
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    margin: 20px;
+    
+}

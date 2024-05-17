@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Examen tercer trimestre Lenguaje de Marcas">
+    <meta name="keywords" content="HTML, CSS, javascript, examen, ceu, dam, daw">
+    <meta name="author" content="Pablo Vega Flores">
+    <link rel="stylesheet" href="Estilos/examen3trimestre.css">
+    <link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
+    <title>Examen 3º Trimestre</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="indice">
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#Cuestionario">Cuestionario</a></li>
+                <li><a href="#Configuración">Configuración</a></li>
+                <li><a href="#Sugerencias">Sugerencias</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="noticias">
+        <article>
+                    <h2>Rafael Nadal vuelve a competir en Barcelona</h2>
+                    <figure>
+                            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2022/06/24/16560843481540.jpg" alt="Imagen de Rafael Nadal en el Godó">
+                        <figcaption>Rafael Nadal en el Godó</figcaption>
+                    </figure>
+                    <p>El tenista español, Rafa Nadal, muestra su alegría al finalizar su
+                        partido de primera ronda del Barcelona Open Banc Sabadell - Trofeo Conde
+                        de Godó de tenis disputado este martes ante el italiano Flavio Cobolli.
+                        Rafael Nadal ganó (2-6 y 3-6).
+                    </p>
+        </article>
+        <div class="contenedor">
+            <div style="width: 50%;">
+                <article id="feria_sevilla">
+                    <h2>Comienza la Feria de Abril de Sevilla</h2>
+                    <figure>
+                        <img src="https://s3.abcstatics.com/abc/www/multimedia/sevilla/2024/04/13/portada_iluminada-U60867637123dC-RWEhRjatrQxE9EM3LcT35vJ-1200x840@diario_abc.jpeg" alt="Imagen de la portada de la feria de Sevilla">
+                        <figcaption>Feria de Abril de Sevilla</figcaption>
+                    </figure>
+                    <p>A las doce en punto de la noche, las 25.000 bombillas de la portada
+                        de la Feria de Abril de Sevilla se encenderán en el real de Los Remedios
+                        con la prueba del Alumbrado para dar comienzo a una fiesta universal, que
+                        fue declarada de interés turístico internacional en 1980. Antes muchos
+                        sevillanos y visitantes habrán disfrutado ya de la tradicional cena del
+                        Pescaíto, en la que los socios de las casetas vuelven a reencontrarse, a
+                        saborear la típic</p>
+                </article>
+            </div>
+            <div style="width: 50%;">
+                <article id="broncano">
+                    <h2>La fortuna del chico de oro de la televisión</h2>
+                    <figure>
+                        <a href=""><img src="https://content20.lecturas.com/medio/2024/04/16/david-broncano_72686e85_240416101036_1280x720.jpg" alt=""></a>
+                        <figcaption>David Broncano</figcaption>
+                    </figure>
+                    <p> Ha firmado por dos años por TVE a cambio de 28 millones para
+                        competir con Pablo Motos. Su suculento contrato se sumará a su buen
+                        Patrimonio: tiene dos áticos en Madrid y una productora de éxito.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <form id="Cuestionario" action="https://www.w3schools.com/action_page.php" target="_blank">
+        <fieldset>
+
+            <legend>Cuestionario(Datos personales)</legend>
+            <label for="name">*Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" required pattern="[A-Za-z]{1,20}">
+            
+            <br><br>
+    
+            <label for="apellidos">*Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-z ]{1,100}">
+            
+            <br><br>
+            
+            <label for="fecha_nacimiento">*Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="Fecha de nacimiento" min="1900-01-01" required>
+            
+            <br><br>
+            
+            <label for="direccion">*Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required pattern="[A-Za-z ]{1,120}">
+            
+            <br><br>
+            
+            <label for="email">*Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <br><br>
+            
+            <label for="telefono">*Teléfono (xxx-xx-xx-xx):</label> <br>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+            
+            <br><br>
+            
+            <label for="CodPostal">Código postal(xxxxx):</label> <br>
+            <input type="CodPostal" id="CodPostal" name="CodPostal" pattern="[0-9]{3}">
+            
+            <br><br><br>
+            
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="Hombre" id="Hombre">
+            <label for="sexo">Hombre</label>
+            <input type="radio" name="Mujer" id="Mujer">
+            <label for="sexo">Mujer</label>    
+            <br><br>
+            <label for="idiomas">Idiomas:</label>
+            <input type="checkbox" id="Inglés" name="Idiomas[]" value="Inglés">
+            <label for="Idiomas">Inglés</label>
+            <input type="checkbox" id="Francés" name="Idiomas[]" value="Francés">
+            <label for="Idiomas">Francés</label>
+            <input type="checkbox" id="Alemán" name="Idiomas[]" value="Alemán">
+            <label for="Idiomas">Alemán</label>
+            <input type="checkbox" id="Italiano">
+            <label for="Idiomas">Italiano</label>
+            <input type="checkbox" id="Otros">
+            <label for="Idiomas">Otros</label>
+            
+            <br><br>
+    
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+    <form id="Configuración" action="https://www.w3schools.com/action_page.php" target="_blank">
+        <fieldset>
+            <legend>Configuración</legend>
+            <label for="SubirImagen">Subir Imagen:</label>
+            <input type="file" id="imagen">
+            
+            <br><br>
+            
+            <label for="Color">Selecciona color de Fondo: </label>
+            <input type="color" id="color">
+            
+            <br><br>
+
+            <label for="contraste">Selecciona el contraste (entre 0 y 100):</label> <br>
+            <input type="range" id="contraste" name="contraste" min="0" max="100" step="10">
+            
+            <br><br>
+            
+            <label for="numRefresco">Introduzca un número de refresco (entre 1 a 10) segundos: </label>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+    
+    <form id="Sugerencias" action="https://www.w3schools.com/action_page.php" target="_blank" style="background-color: green; color: white;">
+        <fieldset>
+            <legend>Sugerencias</legend>
+            <label for="sugerencia">Escribe cualquier sugerencia</label><br>
+            <textarea rows="10" cols="50" id="sugerencia" name="texto"></textarea>
+            
+            <br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+
+    <form id="Login" action="https://www.w3schools.com/action_page.php" target="_blank" style="background-color: coral; color: white;">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">*Usuario:</label>
+            <input type="text" id="Usuario" name="Usuario" required pattern="[A-Za-z]{1,20}">
+            
+            <br><br>
+            
+            <label for="name">*Contraseña:</label>
+            <input type="password" id="Contraseña" name="Contraseña" required pattern="[A-Za-z]{1,20}">
+            <br><br>
+            
+            <input type="submit" value="Iniciar Sesion">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web (Pablo Vega). Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
